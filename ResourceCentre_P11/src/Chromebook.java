@@ -1,4 +1,3 @@
-
 public class Chromebook extends Item{
 	private String os;
 
@@ -18,5 +17,3 @@ public class Chromebook extends Item{
 		return output;
 	}
 }
-
-
