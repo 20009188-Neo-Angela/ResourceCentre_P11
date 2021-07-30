@@ -83,8 +83,8 @@ public class ResourceCentreTest {
 		
 		//test if the expected output string same as the list of camcorders retrieved from the SourceCentre	
 		allCamcorder= ResourceCentre.retrieveAllCamcorder(camcorderList);
-		testOutput = String.format("%-84s \n",camcorderList.get(0).toString());
-		testOutput += String.format("%-84s \n",camcorderList.get(1).toString() );
+		testOutput = String.format("%-84s \n", camcorderList.get(0).toString());
+		testOutput += String.format("%-84s \n", camcorderList.get(1).toString() );
 	
 		assertEquals("Test that ViewAllCamcorderlist", testOutput, allCamcorder);
 		
@@ -107,8 +107,8 @@ public class ResourceCentreTest {
 		
 		//test if the expected output string same as the list of chromebooks retrieved from the SourceCentre	
 		allChrombook= ResourceCentre.retrieveAllChromebook(chromebookList);
-		testOutput = String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0011", "My Google Chromebook 1st","Yes", "", "Mac OS");
-		testOutput += String.format("%-10s %-30s %-10s %-10s %-20s\n","CB0012", "SAMSUNG Chromebook 4+", "Yes", "","Win 10");	
+		testOutput = String.format("%-84s \n", chromebookList.get(0).toString());
+		testOutput += String.format("%-84s \n", chromebookList.get(1).toString());	
 		assertEquals("Test that ViewAllChromebooklist", testOutput, allChrombook);
 	}
 
